@@ -1,10 +1,9 @@
 from hashlib import sha256
-from Classes import *
 print("Biblioteca DivasLia")
 while(2!=3):
     senha = sha256((input("Digite sua senha: ")).encode()).hexdigest()
-    if senha == "0559329ef95a60080163a64be4f8867cc297ba64187c7e061f724da5dc793480":
-        print("Bem vindo Matusálem!")
+    if senha == "b0a9deffef295c3e560a840305f81b4ff3ea595c8d6a73219988162e7048e43d":
+        print("Bem vindo a Biblioteca DivasLia!")
         break
     else:
         print("Senha incorreta, por favor tente novamente.")
