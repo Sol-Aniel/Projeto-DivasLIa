@@ -10,18 +10,18 @@ while(2!=3):
         realizar=input("O que deseja fazer?")
         if realizar==visualizar:
             item=input("O que deseja visualizar?")
-             if item==livros:
+             if item=="livros":
                print(lista_livros)
-             if item==revistas:
+             if item=="revistas":
                print(lista_revistas)               \\Visualizar Itens
-             if item==jornais:
+             if item=="jornais":
                print(lista_jornais)
-             if item==funcionarios:
+             if item=="funcionarios":
                print(lista_funcionarios)
-            if item==emprestimo:
+            if item=="emprestimo":
                print(lista_emprestimos)
   
-        else realizar==atualizar:
+        else realizar=="atualizar":
               novo_emprestimo=Emprestimos()
               new_emprestimo=input("Informações do Empréstimo")    \\Modificar Emprestimos
               novo_emprestimo=new_emprestimo
@@ -32,28 +32,28 @@ while(2!=3):
        alterar=input("O que deseja alterar?")
        fazer=input("O que deseja visualizar?")
 \\Ver os docs
-       if fazer==livros:
+       if fazer=="livros":
            print(lista_livros)
-       if fazer==revistas:
+       if fazer=="revistas":
            print(lista_revistas)
-       if fazer==jornais:
+       if fazer=="jornais":
            print(lista_jornais)
-       if fazer==funcionarios:
+       if fazer=="funcionarios":
            print(lista_funcionarios)
-        if fazer==emprestimo:
+        if fazer=="emprestimo":
             print(lista_emprestimos)
        else 
            print(Entendido, não deseja visualizar nada.)
 \\Alterar lista de livros
-       if alterar==livros:
+       if alterar=="livros":
            editar_livro=input("Quer remover ou adicionar livros a sua biblioteca?")
-           if editar_livro==remover:
+           if editar_livro=="remover":
                livroedit=input("Nome do livro")   \\Remover um livro da lista
                lista_livros.remove('livroedit')
             else 
                novo_livro1=Livros()
                lista_livros.append('novo_livro1')  \\Adicionar um livro na lista
-         if alterar==revistas:
+         if alterar=="revistas":
            editar_revista=input("Quer remover ou adicionar revistas a sua biblioteca?")
            if editar_revista==remover:
                revistaedit=input("Nome da revista")
@@ -61,17 +61,17 @@ while(2!=3):
             else 
                novo_revista1=Revistas()
                lista_revistas.append('novo_revista1')
-         if alterar==jornal:
+         if alterar=="jornal":
            editar_jornal=input("Quer remover ou adicionar revistas a sua biblioteca?")
-           if editar_jornal==remover:
+           if editar_jornal=="remover":
                jornaledit=input("Nome do jornal")
                lista_jornal.remove('jornaledit')
             else 
                novo_jornal1=Jornal()
                lista_jornal.append('novo_jornal1')
-         if alterar==funcionários:
+         if alterar=="funcionários":
            editar_funcionarios=input("Quer remover ou adicionar funcionários?")
-           if editar_funcioarios==remover:
+           if editar_funcioarios=="remover":
                funcionarioedit=input("Nome do funcionário:")
                lista_funcionarios.remove('funcionarioedit')
             else 
