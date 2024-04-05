@@ -21,26 +21,25 @@ class Funcionarios (Pessoa):
         self.Codigo = int(Codigo)
 
 class Documentos:
-    def __init__(self, Titulo, PubANO, Editora, Idioma, Disponibilidade, quantidade):
+    def __init__(self, Titulo, PubANO, Editora, Disponibilidade, quantidade):
         self.Titulo = str(Titulo)
         self.PubANO = int(PubANO)
         self.Editora = str(Editora)
-        self.Idioma = str(Idioma)
         self.Disponibilidade = bool(Disponibilidade)
         self.quantidade=int(quantidade)
 
 class Livros (Documentos):
-    def __init__(self, Titulo, PubANO, Editora, Idioma, Disponibilidade, quantidade):
-        super().__init__(self, Titulo, PubANO, Editora, Idioma, Disponibilidade, quantidade)
+    def __init__(self, Titulo, PubANO, Editora,  Disponibilidade, quantidade):
+        super().__init__(self, Titulo, PubANO, Editora,  Disponibilidade, quantidade)
         self.Autor = str(Autor)
         self.Edição = int(Edição)
 class Revistas (Documentos):
-    def __init__(self, Titulo, PubANO, Editora, Idioma, Disponibilidade, quantidade):
-        super().__init__(self, Titulo, PubANO, Editora, Idioma, Disponibilidade, quantidade)
+    def __init__(self, Titulo, PubANO, Editora, Disponibilidade, quantidade):
+        super().__init__(self, Titulo, PubANO, Editora, Disponibilidade, quantidade)
         self.PubSEM = int(PubSEM)
 class Jornais (Documentos):
     (self, Titulo, PubANO, Editora, Idioma, Disponibilidade):
-        super().__init__(self, Titulo, PubANO, Editora, Idioma, Disponibilidade, quantidade):
+        super().__init__(self, Titulo, PubANO, Editora, Disponibilidade, quantidade):
         self.PubDIA = int(PubDIA)
 
 class Emprestimos:
